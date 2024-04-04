@@ -8,5 +8,8 @@
 	"license": "MIT",
 	"publishConfig": {
 		"access": "public"
+	},
+	"devDependencies": {
+		"@types/node": "^20.12.4"
 	}
 }
