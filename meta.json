@@ -1,0 +1,5 @@
+{
+  "name": "Opac",
+  "description": "Monorepo with multiple Next.js apps (OPAC, CPM Manager, CPM Client) sharing a UI library all using Tailwind CSS with a shared config.",
+  "feature": true
+}

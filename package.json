@@ -9,12 +9,14 @@
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
+    "@repo/tailwind-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "prettier": "^3.2.5",
-    "turbo": "latest"
+    "turbo": "latest",
+    "better-commits": "^1.14.0"
   },
   "packageManager": "pnpm@8.9.0",
   "engines": {
     "node": ">=18"
-  }
+  },
 }
