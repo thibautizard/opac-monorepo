@@ -6,6 +6,13 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
+const Divider = (
+	<div>
+		<hr className="bg-gradient-to-r from-purple-500 from-1% via-indigo-500 via-10% via-cyan-500 via-55% to-blue-700 h-[8px]" />
+		<div className="h-4 bg-background" />
+	</div>
+);
+
 export const metadata: Metadata = {
 	title: "Onepark Flow",
 	description:
@@ -21,6 +28,7 @@ export default function RootLayout({
 		<html lang="en">
 			<body className={inter.className}>
 				<Header />
+				{Divider}
 				<main>{children}</main>
 				<Footer />
 			</body>
