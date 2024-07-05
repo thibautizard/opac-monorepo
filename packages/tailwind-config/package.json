@@ -5,11 +5,8 @@
 	"exports": {
 		".": "./tailwind.config.ts"
 	},
-	"license": "MIT",
-	"publishConfig": {
-		"access": "public"
-	},
 	"devDependencies": {
-		"@types/node": "^20.12.4"
+		"@repo/typescript-config": "workspace:*",
+		"tailwindcss": "^3.4.4"
 	}
 }

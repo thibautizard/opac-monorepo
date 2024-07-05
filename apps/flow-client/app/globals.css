@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-weight: 300;
+}
+
+a {
+  color:#04249C;
+  text-decoration: underline;
+}
+
+.list-with-separators li:not(:last-child)::after {
+  content: "|"; /* Your symbol here */
+  padding: 0 4px; /* Adjust spacing around the separator as needed */
+}
