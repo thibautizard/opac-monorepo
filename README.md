@@ -10,7 +10,7 @@ This monorepo will contain three main Next.js applications :
 
 Along with these applications, you'll have a doc application that details how is built this monorepo and what or why some technologies were picked.
 
-This monorepo is handled by [Turborepo](https://turbo.build/repo), a powerful tool that aims at optimizing the tasks you need to run to improve DX and remove maintenance burden and overhead due to scaling project.
+This monorepo is managed by [Turborepo](https://turbo.build/repo), a powerful tool that aims at optimizing the tasks we need to run throughout the whole repo (lint, build, test etc.) to improve DX, remove maintenance burden and overhead due to scaling project, stop battling with tooling and speed up CI.
 
 ## Set up
 

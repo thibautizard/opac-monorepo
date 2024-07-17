@@ -12,15 +12,15 @@ importers:
         specifier: ^7.4.2
         version: 7.4.2
     devDependencies:
-      '@repo/eslint-config':
+      '@opac/eslint-config':
         specifier: workspace:*
-        version: link:packages/eslint-config
-      '@repo/tailwind-config':
+        version: link:tooling/eslint-config
+      '@opac/tailwind-config':
         specifier: workspace:*
-        version: link:packages/tailwind-config
-      '@repo/typescript-config':
+        version: link:tooling/tailwind-config
+      '@opac/typescript-config':
         specifier: workspace:*
-        version: link:packages/typescript-config
+        version: link:tooling/typescript-config
       better-commits:
         specifier: ^1.15.7
         version: 1.15.7
@@ -73,7 +73,7 @@ importers:
 
   apps/flow-client:
     dependencies:
-      '@repo/ui':
+      '@opac/ui':
         specifier: workspace:*
         version: link:../../packages/ui
       lucide-react:
@@ -89,15 +89,15 @@ importers:
         specifier: ^18.3.1
         version: 18.3.1(react@18.3.1)
     devDependencies:
-      '@repo/eslint-config':
+      '@opac/eslint-config':
         specifier: workspace:*
-        version: link:../../packages/eslint-config
-      '@repo/tailwind-config':
+        version: link:../../tooling/eslint-config
+      '@opac/tailwind-config':
         specifier: workspace:*
-        version: link:../../packages/tailwind-config
-      '@repo/typescript-config':
+        version: link:../../tooling/tailwind-config
+      '@opac/typescript-config':
         specifier: workspace:*
-        version: link:../../packages/typescript-config
+        version: link:../../tooling/typescript-config
       '@types/node':
         specifier: ^20.14.6
         version: 20.14.11
@@ -132,41 +132,6 @@ importers:
         specifier: ^5.4.5
         version: 5.5.3
 
-  packages/eslint-config:
-    devDependencies:
-      '@typescript-eslint/eslint-plugin':
-        specifier: ^7.1.0
-        version: 7.16.1(@typescript-eslint/parser@7.16.1)(eslint@8.57.0)(typescript@5.5.3)
-      '@typescript-eslint/parser':
-        specifier: ^7.1.0
-        version: 7.16.1(eslint@8.57.0)(typescript@5.5.3)
-      '@vercel/style-guide':
-        specifier: latest
-        version: 6.0.0(eslint@8.57.0)(prettier@3.3.3)(typescript@5.5.3)
-      eslint-config-prettier:
-        specifier: ^9.1.0
-        version: 9.1.0(eslint@8.57.0)
-      eslint-config-turbo:
-        specifier: latest
-        version: 2.0.7(eslint@8.57.0)
-      eslint-plugin-only-warn:
-        specifier: ^1.1.0
-        version: 1.1.0
-      typescript:
-        specifier: ^5.3.3
-        version: 5.5.3
-
-  packages/tailwind-config:
-    devDependencies:
-      '@repo/typescript-config':
-        specifier: workspace:*
-        version: link:../typescript-config
-      tailwindcss:
-        specifier: ^3.4.4
-        version: 3.4.6
-
-  packages/typescript-config: {}
-
   packages/ui:
     dependencies:
       '@radix-ui/react-slot':
@@ -188,15 +153,15 @@ importers:
         specifier: ^1.0.7
         version: 1.0.7(tailwindcss@3.4.6)
     devDependencies:
-      '@repo/eslint-config':
+      '@opac/eslint-config':
         specifier: workspace:*
-        version: link:../eslint-config
-      '@repo/tailwind-config':
+        version: link:../../tooling/eslint-config
+      '@opac/tailwind-config':
         specifier: workspace:*
-        version: link:../tailwind-config
-      '@repo/typescript-config':
+        version: link:../../tooling/tailwind-config
+      '@opac/typescript-config':
         specifier: workspace:*
-        version: link:../typescript-config
+        version: link:../../tooling/typescript-config
       '@turbo/gen':
         specifier: ^1.12.4
         version: 1.13.4(@types/node@20.14.11)(typescript@5.5.3)
@@ -233,6 +198,41 @@ importers:
       typescript:
         specifier: ^5.3.3
         version: 5.5.3
+
+  tooling/eslint-config:
+    devDependencies:
+      '@typescript-eslint/eslint-plugin':
+        specifier: ^7.1.0
+        version: 7.16.1(@typescript-eslint/parser@7.16.1)(eslint@8.57.0)(typescript@5.5.3)
+      '@typescript-eslint/parser':
+        specifier: ^7.1.0
+        version: 7.16.1(eslint@8.57.0)(typescript@5.5.3)
+      '@vercel/style-guide':
+        specifier: latest
+        version: 6.0.0(eslint@8.57.0)(prettier@3.3.3)(typescript@5.5.3)
+      eslint-config-prettier:
+        specifier: ^9.1.0
+        version: 9.1.0(eslint@8.57.0)
+      eslint-config-turbo:
+        specifier: latest
+        version: 2.0.7(eslint@8.57.0)
+      eslint-plugin-only-warn:
+        specifier: ^1.1.0
+        version: 1.1.0
+      typescript:
+        specifier: ^5.3.3
+        version: 5.5.3
+
+  tooling/tailwind-config:
+    devDependencies:
+      '@opac/typescript-config':
+        specifier: workspace:*
+        version: link:../typescript-config
+      tailwindcss:
+        specifier: ^3.4.4
+        version: 3.4.6
+
+  tooling/typescript-config: {}
 
 packages:
 

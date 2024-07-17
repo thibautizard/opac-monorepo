@@ -8,9 +8,9 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
-    "@repo/eslint-config": "workspace:*",
-    "@repo/tailwind-config": "workspace:*",
-    "@repo/typescript-config": "workspace:*",
+    "@opac/eslint-config": "workspace:*",
+    "@opac/tailwind-config": "workspace:*",
+    "@opac/typescript-config": "workspace:*",
     "better-commits": "^1.15.7",
     "prettier": "^3.3.3",
     "turbo": "latest"
