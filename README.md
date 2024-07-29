@@ -4,9 +4,9 @@
 
 This monorepo will contain three main Next.js applications :
 
-- **OPAC** : set up and monitor installations equipped with OnePark devices to which companies and carparks can be associated with
-- **Flow manager** : a dashboard app to manage one or several carpark owned by a company and to control financial flows
-- **Flow client** : a user interface that customer can access to book parkings
+- **OPAC** : set up and monitor OnePark devices and installations they control
+- **Flow manager** : a dashboard app to manage one or several carpark owned by a company and get financial reports
+- **Flow client** : a user interface provided to the customer with a special link by company so that he can book parkings or pay on-demand accesses
 
 Along with these applications, you'll have a doc application that details how is built this monorepo and what or why some technologies were picked.
 
@@ -63,7 +63,7 @@ better-branch
 
 ### 2. Add and commit changes
 
-Once required changes are made, you can commit :
+Once required changes are made, you can add your changes to staging are then commit with this single command :
 
 ```sh
 better-commits
@@ -83,7 +83,7 @@ git push origin -u OPAC-XXX/feat/my-awesome-feature
 This will create a remote branch linked to your local branch.
 
 > [!NOTE]
-> It is generally better to name your remote branch the same as your local branch to avoid any confusion between local and remote branches.
+> It is generally better to name your countepart remote branch the same as your local branch to avoid any confusion between local and remote branches.
 
 If you need later to push other commits and an upstream branch is already set, you can simply run :
 
@@ -92,7 +92,7 @@ git push origin
 ```
 
 > [!TIP]
-> In case you've rebased your branch, as it alters your commit history because rebased commit have an unique hash, you will need to add `--force` or `-f` flag to keep pushing those changes to your remote branch.
+> In case you've rebased your branch onto another, as it alters your commit history because rebased commits have an unique hash, you will need to add `--force` or `-f` flag to keep pushing those changes to your remote branch.
 >
 > ```sh
 > git push origin -f
@@ -105,9 +105,9 @@ Once 1/ you're satisfied with what you've done 2/ you've pushed it to the GitHub
 Don't forget to **add reviewers** (top right section of your pull request page) to notify them.
 
 > [!TIP]
-> You can refer to the [Conventional Comments](https://conventionalcomments.org/) to improve communication and readibility throughout the review.
+> You can refer to the [Conventional Comments](https://conventionalcomments.org/) to improve communication and readibility throughout the whole review process.
 
-When asked for, **make requested changes** and **push them to new commits** (`git commit -m "PR fixs #1"` for instance) so your reviewer can clearly see the difference between the last state of the code he checked and what you've changed since then.
+When asked for, **make requested changes** and **push them to new commits** (`git commit -m "PR fixs #1"` for instance) so your reviewer can clearly see the difference between the last state of the code he checked and what you've changed since then. The additional commits will be squashed later.
 
 ### 5. Merge pull request
 
