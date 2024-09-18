@@ -50,7 +50,7 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     navbar: {
-      title: "Flow Documentation",
+      title: "OPAC / Flow Documentation",
       logo: {
         alt: "My Site Logo",
         src: "img/logo.svg"

@@ -1,6 +1,0 @@
-{
-  "compilerOptions": {
-    "forceConsistentCasingInFileNames": true
-  },
-  "extends": "@opac/typescript-config/base.json"
-}
